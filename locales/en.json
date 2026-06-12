@@ -1,0 +1,62 @@
+{
+  "head.title": "Sky Restaurant & Pool Bar – Skopje | Official Site",
+
+  "hero.title": "Taste, fun and summer magic",
+  "hero.welcome": "welcome",
+  "hero.button": "View Menu",
+
+  "navbar.home": "Home",
+  "navbar.menu": "Menu",
+  "navbar.services": "Services",
+  "navbar.gallery": "Gallery",
+  "navbar.about": "About",
+  "navbar.contact": "Contact",
+  
+  "services.subtitle": "offer",
+  "services.title": "Our services",
+  "services.kujna": "Gourmet Cuisine",
+  "services.kujna.description": "Enjoy authentic Macedonian dishes prepared with fresh ingredients.",
+  "services.gourmet": "Craft Cocktails",
+  "services.gourmet.description": "Refresh yourself with unique cocktails by our bar.",
+  "services.pool": "Pool Bar",
+  "services.pool.description": "Relax and enjoy drinks by our poolside bar.",
+  "services.private": "Private Events",
+  "services.private.description": "Host birthdays, weddings, and all kinds of private events.",
+  "services.contact": "Contact Us",
+  "services.live": "Live Music",
+  "services.live.description": "Enjoy live performances on special occasions and holidays.",
+  "services.catering": "Catering Services",
+  "services.catering.description": "We offer catering for your special occasions.",
+  "services.contactButton": "Learn more",
+
+  "gallery.subtitle": "gallery",
+  "gallery.title": "Our Story",
+  "gallery.button": "Show More",  
+  "gallery.showMore": "Show more",
+  "gallery.showLess": "Show less",
+
+  "about.subtitle": "about us",
+  "about.title": "Who We Are?",
+  "about.text": "Welcome to Sky Restaurant and Pool Bar, a hidden gem located in the peaceful village of Mirkovci, just a few steps from Skopje. What began as a modest vision in 2021 has grown into a vibrant destination where delicious food, refreshing drinks and summer vibes come together in perfect harmony.",
+  "about.more-text": "Founded by Viktor, a hardworking enthusiast with a passion for creating unforgettable experiences, the initial concept—then called Sky Vibe—was a cocktail bar intended to bring a touch of sophistication to the young and energetic. But Viktor's ambition and dedication transformed this space into a full-fledged restaurant with a large pool, a place where everyone can enjoy a unique combination of relaxation and gastronomic delight. Today, Sky Restaurant and Pool Bar offers much more than just drinks - our menu is filled with delicious dishes prepared with love, from fresh salads to decadent desserts, while the pool adds a touch of summer magic for all our guests. Whether you're here to relax by the water, enjoy a family lunch, or have fun with friends under the stars, we are dedicated to offering you top-notch service and a warm atmosphere. Our story is proof of what can be achieved with hard work, creativity, and a desire to create something special. Join us at Sky Restaurant and Pool Bar and be part of this delicious journey that continues to grow and inspire!",
+  "about.showMore": "Show more",
+  "about.showLess": "Show less",
+
+  "contact.subtitle": "contact",
+  "contact.title": "Information",
+  "contact.google-maps-link": "View on Google Maps",
+  "contact.address-title": "Address:",
+  "contact.address-subtitle": "Mirkovci, Chucher-Sandevo, Skopje",
+  "contact.phone-title": "Phone:",
+  "contact.working-hours-title": "Working Hours:",
+  "contact.working-hours-subtitle": "Monday - Sunday: 08:00 - 24:00",
+  "contact.social-media-title": "Social Media:",
+
+  "menu.head.title":"Sky Restaurant & Pool Bar | Menu",
+  "menu.subtitle": "menu",
+  "menu.title": "Selection",
+  "menu.food": "Food",
+  "menu.drinks": "Drinks",
+  
+  "footer": "© 2026 Sky Restaurant and Pool bar. All rights reserved."
+}

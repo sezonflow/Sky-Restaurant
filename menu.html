@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="menu.head.title">Sky Restaurant & Pool Bar | Мени</title>
+  <meta name="description" content="Explore the full menu of Sky Restaurant & Pool Bar — breakfast, food, drinks and poolside specials.">
+  <link rel="canonical" href="https://skyrestaurant.mk/menu.html">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <meta property="og:title" content="Sky Restaurant & Pool Bar | Menu">
+  <meta property="og:description" content="See the full food & drinks menu at Sky Restaurant & Pool Bar.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://skyrestaurant.mk/menu.html">
+  <meta property="og:image" content="https://skyrestaurant.mk/img/bg2.webp">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-lightbrown flex flex-col min-h-screen">
+  <nav id="navbar" class="fixed top-0 w-full z-40 text-lightbrown bg-dark">
+    <div class="md:max-w-screen-xl mx-auto flex justify-between items-center px-4 h-14">
+      <!-- Logo -->
+      <a href="#menu" class="w-16"><img src="img/Logo.svg" alt="Logo"></a>
+
+      <!-- Desktop Nav -->
+      <ul class="hidden lg:flex items-center uppercase font-light tracking-widest gap-4 h-full">
+        <li><a href="index.html#home" data-i18n="navbar.home" class="px-1 hover:underline hover:underline-offset-8">Почетна</a></li>
+        <li><a href="index.html#services" data-i18n="navbar.services" class="px-1 hover:underline hover:underline-offset-8">Услуги</a></li>
+        <li><a href="index.html#gallery" data-i18n="navbar.gallery" class="px-1 hover:underline hover:underline-offset-8">Галерија</a></li>
+        <li><a href="index.html#about" data-i18n="navbar.about" class="px-1 hover:underline hover:underline-offset-8">За нас</a></li>
+        <li><a href="#contact" data-i18n="navbar.contact" class="px-1 hover:underline hover:underline-offset-8">Контакт</a></li>
+      </ul>
+
+      <ul class="hidden lg:flex items-center uppercase font-light gap-4 h-full">
+        <li>
+          <button id="lang-toggle-desktop" class="flex items-center px-2 h-full hover:underline hover:underline-offset-8 transition">
+            <span id="current-lang-text">MK</span>
+            <img id="current-lang-flag" src="img/Macedonian.png" alt="Flag" class="w-6 h-6 ml-1 inline-block">
+          </button>
+        </li>
+      </ul>
+
+      <!-- Mobile Nav (Language + Hamburger) -->
+      <div class="lg:hidden flex items-center">
+        <button id="lang-toggle-mobile" class="mr-4 flex items-center z-50">
+          <span id="current-lang-mobile">MK</span>
+          <img id="current-lang-flag-mobile" src="img/Macedonian.png" alt="Flag" class="w-6 h-6 ml-1">
+        </button>
+
+        <button id="hamburger" class="h-14 z-50">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="absolute uppercase tracking-widest top-auto left-0 w-full bg-dark text-white text-center hidden transition">
+      <li><a href="index.html#home" data-i18n="navbar.home" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Почетна</a></li>
+      <li><a href="index.html#services" data-i18n="navbar.services" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Услуги</a></li>
+      <li><a href="#contact" data-i18n="navbar.contact" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Контакт</a></li>
+    </ul>
+  </nav>
+
+  <section id="menu" class="lg:pt-24 py-16 text-center flex-1">
+    <div class="md:max-w-screen-xl w-full mx-auto px-4">
+      <p data-i18n="menu.subtitle" class="subtitle text-center">мени</p>
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 data-i18n="menu.title" class="title">
+          Избор
+        </h2>
+        <div class="title-line"></div>
+      </div>
+      <div id="categoryTabs"
+        class="w-full shadow-lg bg-white rounded-lg p-4 mb-8 flex justify-center items-center gap-4">
+        <button data-type="food"
+          class="flex flex-col items-center px-6 py-4 text-lg font-playfair border-b-4 border-white text-darkbrown  hover:border-b-4 hover:border-darkbrown/80 transition-colors active-tab">
+          <img src="img/food.png" alt="Food category icon" class="w-12 h-12 mb-2">
+          <span data-i18n="menu.food">Храна</span>
+        </button>
+        <button data-type="drinks"
+          class="flex flex-col items-center px-6 py-4 text-lg font-playfair border-b-4 border-white text-darkbrown  hover:border-b-4 hover:border-darkbrown/80 transition-colors">
+          <img src="img/drinks.png" alt="Drinks category icon" class="w-12 h-12 mb-2">
+          <span data-i18n="menu.drinks">Пијалоци</span>
+        </button>
+      </div>
+      <!-- Subcategory Scroll -->
+      <div class="flex flex-row justify-between items-center md:gap-8 gap-2 mb-8">
+        <button id="scrollLeft"
+          class="left-0 top-1/2 transform text-darkbrown hover:text-darkbrown/80 transition-colors z-10">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <div id="subcategoryScroll" class="flex overflow-x-scroll scroll-smooth gap-2 hide-scrollbar">
+          <!-- Subcategories will be dynamically inserted here -->
+        </div>
+        <button id="scrollRight"
+          class=" right-0 top-1/2 transform  text-darkbrown hover:text-darkbrown/80 transition-colors z-10">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Products will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="pt-12 md:pt-16 pb-12 md:pb-24 bg-white text-center">
+    <div class="md:max-w-screen-xl w-full mx-auto px-4">
+      <p data-i18n="contact.subtitle" class="subtitle">контакт</p>
+
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 data-i18n="contact.title" class="title">
+          Информации
+        </h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <div class="w-full lg:w-1/2">
+          <iframe class="w-full h-96"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9958.694418619874!2d21.40407506441319!3d42.09167209017661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13546b66ef3a969d%3A0xd57ef77cc21508c4!2z0KDQtdGB0YLQvtGA0LDQvSDQodC60LDRmA!5e0!3m2!1smk!2smk!4v1741697628263!5m2!1smk!2smk"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <p class="mt-2 text-darkbrown text-sm">
+            <a data-i18n="contact.google-maps-link" href="https://maps.app.goo.gl/zwC889zo3sersmf69" target="_blank" class="hover:underline">
+              Погледнете на Google Maps
+            </a>
+          </p>
+        </div>
+
+        <div class="w-full lg:w-1/2 text-left">
+          <h3 class="text-3xl font-playfair text-dark mb-4">Sky Restaurant And Pool Bar</h3>
+          <div class="space-y-4">
+            <p>
+              <span data-i18n="contact.address-title" class="info-title">Адреса:</span><br>
+              <span data-i18n="contact.address-subtitle" class="opacity-80">Мирковци, Чучер-Сандево, Скопје</span>
+            </p>
+            <p>
+              <span data-i18n="contact.phone-title" class="info-title">Телефон:</span><br>
+              <a href="tel:+38971527184" class="opacity-80 hover:underline">
+                +389 71 527 184
+              </a>  
+            </p>
+            <p>
+              <span data-i18n="contact.working-hours-title" class="info-title">Работно време:</span><br>
+              <span data-i18n="contact.working-hours-subtitle" class="opacity-80">Понеделник - Недела: 08:00 - 24:00</span>
+            </p>
+            <p>
+              <span data-i18n="contact.social-media-title" class="info-title">Социјални мрежи:</span><br>
+            <div class="flex gap-4 mt-2">
+              <a href="https://www.facebook.com/share/1B3kv8cjQ3/" target="_blank"
+                class="text-dark hover:text-dark/90 transition-colors">
+                <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V15.47H7.898v-3.47h2.54V9.845c0-2.506 1.492-3.89 3.775-3.89 1.096 0 2.24.195 2.24.195v2.46h-1.262c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 3.47h-2.33v6.408C18.344 21.128 22 16.991 22 12z" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/sky.restaurant.and.pool.bar?igsh=MTQzdWI5eGFwaXE1Ng==" target="_blank"
+                class="text-dark hover:text-dark/90 transition-colors">
+                <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+              </a>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4 text-center text-sm md:text-base bottom-0">
+    <p data-i18n="footer">© 2026 Sky Restaurant and Pool bar. Сите права задржани.</p>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="menu.js" defer></script>
+  <script src="i18n.js"></script>
+</body>
+
+</html>

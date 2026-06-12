@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="mk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="head.title">Sky Restaurant & Pool Bar – Skopje | Official Site</title>
+  <meta name="description" content="Sky Restaurant & Pool Bar in Mirkovci near Skopje offers delicious food, refreshing drinks, and a relaxing pool experience. Visit us today!">
+  <meta name="robots" content="index, follow">
+  <meta name="color-scheme" content="light">
+  <meta property="og:title" content="Sky Restaurant & Pool Bar - Mirkovci, Skopje">
+  <meta property="og:description" content="Enjoy delicious food, cocktails, and a stunning pool at Sky Restaurant in Mirkovci.">
+  <meta property="og:image" content="https://skyrestaurant.mk/img/bg1.webp">
+  <meta property="og:url" content="https://skyrestaurant.mk">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sky Restaurant & Pool Bar">
+  <link rel="canonical" href="https://skyrestaurant.mk">
+  <link rel="alternate" hreflang="mk" href="https://skyrestaurant.mk/">
+  <link rel="alternate" hreflang="en" href="https://skyrestaurant.mk/?lang=en">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar" class="fixed top-0 w-full z-40 text-lightbrown bg-dark">
+    <div class="md:max-w-screen-xl mx-auto flex justify-between items-center px-4 h-14">
+      <!-- Logo -->
+      <a href="#home" class="w-16"><img src="img/Logo.svg" alt="Logo"></a>
+
+      <!-- Desktop Nav -->
+      <ul class="hidden lg:flex items-center uppercase font-light tracking-widest gap-4 h-full">
+        <li><a href="#home" data-i18n="navbar.home" class="px-1 hover:underline hover:underline-offset-8">Почетна</a></li>
+        <li><a href="menu.html" data-i18n="navbar.menu" class="px-1 hover:underline hover:underline-offset-8">Мени</a></li>
+        <li><a href="#services" data-i18n="navbar.services" class="px-1 hover:underline hover:underline-offset-8">Услуги</a></li>
+        <li><a href="#gallery" data-i18n="navbar.gallery" class="px-1 hover:underline hover:underline-offset-8">Галерија</a></li>
+        <li><a href="#about" data-i18n="navbar.about" class="px-1 hover:underline hover:underline-offset-8">За нас</a></li>
+        <li><a href="#contact" data-i18n="navbar.contact" class="px-1 hover:underline hover:underline-offset-8">Контакт</a></li>
+      </ul>
+
+      <ul class="hidden lg:flex items-center uppercase font-light gap-4 h-full">
+        <li>
+          <button id="lang-toggle-desktop" class="flex items-center px-2 h-full hover:underline hover:underline-offset-8 transition">
+            <span id="current-lang-text">MK</span>
+            <img id="current-lang-flag" src="img/Macedonian.png" alt="Flag" class="w-6 h-6 ml-1 inline-block">
+          </button>
+        </li>
+      </ul>
+
+      <!-- Mobile Nav (Language + Hamburger) -->
+      <div class="lg:hidden flex items-center">
+        <button id="lang-toggle-mobile" class="mr-4 flex items-center z-50">
+          <span id="current-lang-mobile">MK</span>
+          <img id="current-lang-flag-mobile" src="img/Macedonian.png" alt="Flag" class="w-6 h-6 ml-1">
+        </button>
+
+        <button id="hamburger" class="h-14 z-50">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="absolute uppercase tracking-widest top-auto left-0 w-full bg-dark text-white text-center hidden transition">
+      <li><a href="#home" data-i18n="navbar.home" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Почетна</a></li>
+      <li><a href="menu.html" data-i18n="navbar.menu" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Мени</a></li>
+      <li><a href="#services" data-i18n="navbar.services" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Услуги</a></li>
+      <li><a href="#gallery" data-i18n="navbar.gallery" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Галерија</a></li>
+      <li><a href="#about" data-i18n="navbar.about" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">За нас</a></li>
+      <li><a href="#contact" data-i18n="navbar.contact" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Контакт</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero section -->
+  <section id="home" class="relative h-screen overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 animate-bg-slider bg-fixed" id="bg1">
+    </div>
+    <div
+      class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 animate-bg-slider bg-fixed" id="bg2">
+    </div>
+
+    <div class="absolute inset-0 bg-black/70 flex items-center justify-center">
+      <div class="md:max-w-screen-xl mx-auto w-full px-6 grid grid-cols-1 md:grid-cols-6 gap-y-8 md:gap-x-12 items-center">
+        <div class="col-span-1 md:col-span-4 text-center md:text-left mt-12 md:mt-0 flex flex-col justify-center items-center md:items-baseline">
+          <p class="md:text-5xl text-3xl font-greatvibes text-[#D2B48C] tracking-widest" data-i18n="hero.welcome">добре дојдовте</p>
+          <h1 data-i18n="hero.title" class="text-white sm:text-6xl md:text-7xl text-5xl font-playfair uppercase tracking-wider font-bold mt-4 ">
+            Вкус, забава и летна магија</h1>
+          <a href="menu.html" data-i18n="hero.button"  class="mt-12 px-6 py-3 bg-darkbrown text-white uppercase font-medium rounded-full hover:scale-105 transition">
+            Погледни мени
+          </a>
+        </div>
+        <div class="hidden md:flex md:col-span-2 justify-center">
+          <img src="img/WhiteLogo.svg" alt="Restaurant Logo" class="max-w-full h-auto md:max-h-[50vh]">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service section -->
+  <section id="services" class="py-16 bg-lightbrown" aria-labelledby="services-heading">
+    <div class="md:max-w-screen-xl w-full mx-auto">
+      <p data-i18n="services.subtitle" class="subtitle text-center">понуда</p>
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 data-i18n="services.title" class="title">
+          Нашите услуги
+        </h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+        <!-- Service 1 -->
+        <div class="service-wrapper">
+          <img src="img/slika14.jpg" alt="Gourmet Dining" class="service-img-wrapper">
+          <div class="p-6">
+            <h3 data-i18n="services.kujna" class="service-title-wrapper">Гурманска кујна</h3>
+            <p data-i18n="services.kujna.description" class="service-subtitle-wrapper">Уживајте во автентични македонски јадења приготвени со свежи состојки.
+            </p>
+            <a href="menu.html" data-i18n="hero.button" class="service-button-wrapper hover:bg-darkbrown hover:text-white">
+              Погледни мени
+            </a>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-wrapper">
+          <img src="img/bazen5.jpg" alt="Craft Cocktails" class="service-img-wrapper">
+          <div class="p-6">
+            <h3 data-i18n="services.gourmet" class="service-title-wrapper">Креативни коктели</h3>
+            <p data-i18n="services.gourmet.description" class="service-subtitle-wrapper">Освежете се со уникатни коктели покрај нашиот базен.</p>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-wrapper">
+          <img src="img/slika3.jpg" alt="Pool Relaxation" class="service-img-wrapper">
+          <div class="p-6">
+            <h3 data-i18n="services.pool" class="service-title-wrapper">Релаксација на базен</h3>
+            <p data-i18n="services.pool.description" class="service-subtitle-wrapper">Опуштете се покрај нашиот базен со прекрасен поглед.</p>
+          </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-wrapper">
+          <img src="img/bazen9.jpg" alt="Private Events" class="service-img-wrapper">
+          <div class="p-6">
+            <h3 data-i18n="services.private" class="service-title-wrapper">Приватни настани</h3>
+            <p data-i18n="services.private.description" class="service-subtitle-wrapper">Организирајте родендени, свадби и секаков вид на приватни настани.</p>
+            <a data-i18n="services.contact" href="#contact" class="service-button-wrapper hover:bg-darkbrown hover:text-white">
+              Контактирај нè
+            </a>
+          </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="service-wrapper">
+          <img src="img/slika7.jpg" alt="Live Music" class="service-img-wrapper">
+          <div class="p-6">
+            <h3 data-i18n="services.live" class="service-title-wrapper">Жива музика</h3>
+            <p data-i18n="services.live.description" class="service-subtitle-wrapper">Уживајте во настапи во живо на специјални пригоди и празници.</p>
+          </div>
+        </div>
+        <!-- Service 6 -->
+        <div class="service-wrapper">
+          <img src="img/ketering10.jpg" alt="Catering Services" class="service-img-wrapper">
+          <div class="p-6">
+            <h3 data-i18n="services.catering" class="service-title-wrapper">Кетеринг услуги</h3>
+            <p data-i18n="services.catering.description" class="service-subtitle-wrapper">Нудиме кетеринг за вашите специјални пригоди.</p>
+            <a data-i18n="services.contactButton" href="#contact" class="service-button-wrapper hover:bg-darkbrown hover:text-white">
+              Дознај повеќе
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery section -->
+  <section id="gallery" class="py-12 md:py-16 bg-white text-center">
+    <div class="md:max-w-screen-xl w-full mx-auto">
+
+      <p data-i18n="gallery.subtitle" class="subtitle">галерија</p>
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 data-i18n="gallery.title" class="title">
+          Нашата приказна
+        </h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div id="galleryContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 px-4">
+        <!-- Images are shown here -->
+      </div>
+
+      <button data-i18n="gallery.showMore" id="toggleGallery" data-expanded="false"
+        class="mt-12 px-6 py-3 uppercase tracking-wide rounded-full bg-dark text-white transition-all duration-300 hover:scale-105 hidden" onclick="toggleGallery()">
+        Прикажи повеќе
+      </button>
+    </div>
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
+      <div class="relative max-w-4xl w-full m-4 flex items-center justify-center">
+        <button id="prevImage"
+          class="absolute left-4 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 text-dark hover:bg-gray-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <img id="modalImage" src="" alt="Modal Image" class="max-h-[80vh] w-auto">
+        <button id="nextImage"
+          class="absolute right-4 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 text-dark hover:bg-gray-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button id="closeModal" class="absolute top-2 right-2 bg-white rounded-full p-2 text-dark hover:bg-gray-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="py-12 md:py-16 bg-lightbrown text-center">
+    <div class="md:max-w-screen-xl w-full mx-auto px-4">
+
+      <p data-i18n="about.subtitle" class="subtitle">за нас</p>
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 data-i18n="about.title" class="title">
+          Кои сме ние?
+        </h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <!-- First paragraph (always shown) -->
+        <p data-i18n="about.text"  class="text-dark opacity-60 font-mulish italic text-lg md:text-xl leading-relaxed">
+          Добре дојдовте во Sky Restaurant and Pool Bar, скриен бисер сместен во мирното село Мирковци, на само неколку
+          чекори од Скопје. Она што започна како скромна визија во 2021 година прерасна во живописна дестинација каде
+          вкусната храна, освежителните пијалоци и летните вибрации се спојуваат во совршена хармонија.
+        </p>
+      
+        <!-- Second paragraph: hidden on small screens by default -->
+        <p  data-i18n="about.more-text"  id="more-text" class="hidden text-dark opacity-60 font-mulish italic text-lg md:text-xl md:block leading-relaxed">
+          Основан од Виктор, вреден ентузијаст со страст за создавање незаборавни искуства, првичниот концепт - тогаш
+          наречен Sky Vibe - беше коктел бар наменет да донесе допир на софистицираност за младите и енергични. Но,
+          амбицијата и посветеноста на Виктор го трансформираа овој простор во полноправен ресторан со голем базен,
+          место каде секој може да ужива во уникатна комбинација од релаксација и гастрономско задоволство.<br>
+          Денес, Sky Restaurant and Pool Bar нуди многу повеке од само пијалоци - нашето мени е исполнето со вкусни
+          јадења подготвени со љубов, од свежи салати до раскошни десерти, додека базенот додава допир на летна магија
+          за сите наши гости. Без разлика дали сте тука да се опуштите покрај водата, да уживате во семеен ручек или
+          да се забавувате со пријателите под ѕвездите, ние сме посветени да ви понудиме врвни услуги и топла
+          атмосфера.<br>
+          Нашата приказна е доказ за тоа што може да се постигне со труд, креативност и желба да се создаде нещо
+          посебно. Придружете ни се во Sky Restaurant and Pool Bar и бидете дел от ова вкусно патување кое продолжува
+          да расте и да инспирира!
+        </p>
+      
+        <!-- Toggle button: shown only on small screens -->
+        <button data-i18n="about.showMore" data-expanded="false" id="toggle-button" class="mt-12 mx-auto px-6 py-3 uppercase tracking-wide rounded-full bg-dark text-white transition-all duration-300 hover:scale-105 block md:hidden" onclick="toggleText()">
+          Прикажи повеќе
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="pt-12 md:pt-16 pb-12 md:pb-24 bg-white text-center">
+    <div class="md:max-w-screen-xl w-full mx-auto px-4">
+      <p data-i18n="contact.subtitle" class="subtitle">контакт</p>
+
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 data-i18n="contact.title" class="title">
+          Информации
+        </h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <div class="w-full lg:w-1/2">
+          <iframe class="w-full h-96"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9958.694418619874!2d21.40407506441319!3d42.09167209017661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13546b66ef3a969d%3A0xd57ef77cc21508c4!2z0KDQtdGB0YLQvtGA0LDQvSDQodC60LDRmA!5e0!3m2!1smk!2smk!4v1741697628263!5m2!1smk!2smk"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <p class="mt-2 text-darkbrown text-sm">
+            <a data-i18n="contact.google-maps-link" href="https://maps.app.goo.gl/zwC889zo3sersmf69" target="_blank" class="hover:underline">
+              Погледнете на Google Maps
+            </a>
+          </p>
+        </div>
+
+        <div class="w-full lg:w-1/2 text-left">
+          <h3 class="text-3xl font-playfair text-dark mb-4">Sky Restaurant And Pool Bar</h3>
+          <div class="space-y-4">
+            <p>
+              <span data-i18n="contact.address-title" class="info-title">Адреса:</span><br>
+              <span data-i18n="contact.address-subtitle" class="opacity-80">Мирковци, Чучер-Сандево, Скопје</span>
+            </p>
+            <p>
+              <span data-i18n="contact.phone-title" class="info-title">Телефон:</span><br>
+              <a href="tel:+38971527184" class="opacity-80 hover:underline">
+                +389 71 527 184
+              </a>  
+            </p>
+            <p>
+              <span data-i18n="contact.working-hours-title" class="info-title">Работно време:</span><br>
+              <span data-i18n="contact.working-hours-subtitle" class="opacity-80">Понеделник - Недела: 08:00 - 24:00</span>
+            </p>
+            <p>
+              <span data-i18n="contact.social-media-title" class="info-title">Социјални мрежи:</span><br>
+            <div class="flex gap-4 mt-2">
+              <a href="https://www.facebook.com/share/1B3kv8cjQ3/" target="_blank"
+                class="text-dark hover:text-dark/90 transition-colors">
+                <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V15.47H7.898v-3.47h2.54V9.845c0-2.506 1.492-3.89 3.775-3.89 1.096 0 2.24.195 2.24.195v2.46h-1.262c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 3.47h-2.33v6.408C18.344 21.128 22 16.991 22 12z" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/sky.restaurant.and.pool.bar?igsh=MTQzdWI5eGFwaXE1Ng==" target="_blank"
+                class="text-dark hover:text-dark/90 transition-colors">
+                <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+              </a>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 text-center text-sm md:text-base bottom-0">
+    <p data-i18n="footer">© 2026 Sky Restaurant and Pool bar. Сите права задржани.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="script.js"></script>
+  <script src="i18n.js"></script>
+</body>
+
+</html>
