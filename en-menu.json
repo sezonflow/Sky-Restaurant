@@ -1,37 +1,37 @@
 {
   "food": {
     "Breakfast": [
-      { "name": "Omelette", "description": "3 eggs", "price": 100, "image": "horizontal1.png" },
+      { "name": "Omelette", "description": "3 eggs", "price": 120, "image": "horizontal1.png" },
       { "name": "Sky Breakfast for Two", "description": "set of buns, kajmak, sunny-side-up eggs, prosciutto, bacon, sheep cheese, pancettini, cream, and jam", "price": 600, "image": "caesar.jpg" },
       { "name": "Add-ons", "description": "cheddar 50g, cheese 50g, bacon 30g, mushrooms 50g.", "price": 40, "image": "greek-salad.jpg" }
     ],
     "Cold snacks": [
-      { "name": "Goat Cheese", "description": "100g.", "price": 150},
-      { "name": "Cottage Cheese", "description": "100g.", "price": 170},
-      { "name": "Pepper in Sour Cream", "description": "100g", "price": 150},
-      { "name": "Bacon-Wrapped Cheese", "description": "cheese 100g, bacon 50g.", "price": 250}
+      { "name": "Goat Cheese", "description": "100g.", "price": 170},
+      { "name": "Cottage Cheese", "description": "100g.", "price": 190},
+      { "name": "Pepper in Sour Cream", "description": "100g", "price": 170},
+      { "name": "Bacon-Wrapped Cheese", "description": "cheese 100g, bacon 50g.", "price": 270}
     ],
     "Hot snacks": [
-     { "name": "Chicken fingers", "description": "350g.", "price": 250},
-     { "name": "Chicken wings", "description": "350g.", "price": 250},
-     { "name": "Breadsticks", "description": "dough 200g, 1 egg, sesame 10g.", "price": 130},
-     { "name": "Breadsticks with cheese", "description": "dough 200g, 1 egg, sesame 10g, cheese 50g.", "price": 170},
-     { "name": "French fries", "description": "300g.", "price": 120},
-     { "name": "French fries with cheese", "description": "fries 300g, cheese 50g.", "price": 160},
-     { "name": "Breaded pastry", "description": "300g.", "price": 160},
-     { "name": "Breaded processed cheese", "description": "120g.", "price": 180},
-     { "name": "Grilled mushrooms", "description": "250g.", "price": 160},
-     { "name": "Zucchini", "description": "200g.", "price": 180},
-     { "name": "Flatbread with kajmak", "description": "", "price": 220},
-     { "name": "Breaded yellow cheese", "description": "100g.", "price": 180}
+     { "name": "Chicken fingers", "description": "350g.", "price": 300},
+     { "name": "Chicken wings", "description": "350g.", "price": 300},
+     { "name": "Breadsticks", "description": "dough 200g, 1 egg, sesame 10g.", "price": 150},
+     { "name": "Breadsticks with cheese", "description": "dough 200g, 1 egg, sesame 10g, cheese 50g.", "price": 200},
+     { "name": "French fries", "description": "300g.", "price": 130},
+     { "name": "French fries with cheese", "description": "fries 300g, cheese 50g.", "price": 170},
+     { "name": "Breaded pastry", "description": "300g.", "price": 180},
+     { "name": "Breaded processed cheese", "description": "120g.", "price": 200},
+     { "name": "Grilled mushrooms", "description": "250g.", "price": 180},
+     { "name": "Zucchini", "description": "200g.", "price": 200},
+     { "name": "Flatbread with kajmak", "description": "", "price": 240},
+     { "name": "Breaded yellow cheese", "description": "100g.", "price": 210}
     ],
     "Salads": [
     { "name": "Sky salad", "description": "lettuce 50g, sour cream 50g, roasted sesame 20g, mayonnaise 20g, yellow cheese 40g, ham 50g, parmesan 20g.", "price": 300},
-    { "name": "Shopska salad", "description": "tomato 100g, cucumber 100g, cheese 70g, olives 20g.", "price": 180},
-    { "name": "Greek salad", "description": "tomato 100g, cucumber 80g, cheese 70g, olives 20g, onion 30g.", "price": 190},
-    { "name": "Macedonian salad", "description": "tomato 150g, pepper 10g, onion 30g, parsley 10g.", "price": 190},
-    { "name": "Caesar salad", "description": "lettuce 50g, cherry tomatoes 50g, chicken fillet 100g, yellow cheese 50g, parmesan 20g, tartar sauce 30g.", "price": 270},
-    { "name": "Vitamin salad", "description": "beetroot 70g, carrot 70g, cabbage 70g.", "price": 150}
+    { "name": "Shopska salad", "description": "tomato 100g, cucumber 100g, cheese 70g, olives 20g.", "price": 210},
+    { "name": "Greek salad", "description": "tomato 100g, cucumber 80g, cheese 70g, olives 20g, onion 30g.", "price": 220},
+    { "name": "Macedonian salad", "description": "tomato 150g, pepper 10g, onion 30g, parsley 10g.", "price": 220},
+    { "name": "Caesar salad", "description": "lettuce 50g, cherry tomatoes 50g, chicken fillet 100g, yellow cheese 50g, parmesan 20g, tartar sauce 30g.", "price": 300},
+    { "name": "Vitamin salad", "description": "beetroot 70g, carrot 70g, cabbage 70g.", "price": 180}
     ],
     "Plates": [
     { "name": "Breaded plate", "description": "chicken fingers 350g, pastry 250g, processed cheese 100g, yellow cheese 120g, mushrooms 100g, breaded onion 40g, breaded potatoes 40g.", "price": 1000},
@@ -43,53 +43,54 @@
     { "name": "Bolognese", "description": "pasta 200g, bolognese sauce 200g, ground meat 100g.", "price": 300}
     ],
     "Sandwiches": [
-    { "name": "Sky burger", "description": "bun 150g, patty 150g, fries 50g, 1 fried egg, cheddar + cream, pickles", "price": 250},
-    { "name": "Hamburger", "description": "bun 150g, patty 150g, fries 50g.", "price": 200},
-    { "name": "Chicken burger", "description": "bun 150g, chicken fillet 150g, fries 50g.", "price": 200},
-    { "name": "Cheeseburger", "description": "bun 150g, patty 150g, fries 50g, yellow cheese 50g.", "price": 230},
-    { "name": "Crispy burger", "description": "bun 150g, breaded fillet 150g, fries 50g.", "price": 230},
-    { "name": "Gyro", "description": "", "price": 200}
+    { "name": "Sky burger", "description": "bun 150g, patty 150g, fries 50g, 1 fried egg, cheddar + cream, pickles", "price": 270},
+    { "name": "Hamburger", "description": "bun 150g, patty 150g, fries 50g.", "price": 220},
+    { "name": "Chicken burger", "description": "bun 150g, chicken fillet 150g, fries 50g.", "price": 220},
+    { "name": "Cheeseburger", "description": "bun 150g, patty 150g, fries 50g, yellow cheese 50g.", "price": 250},
+    { "name": "Crispy burger", "description": "bun 150g, breaded fillet 150g, fries 50g.", "price": 250},
+    { "name": "Gyro", "description": "", "price": 220}
     ],
     "Pastrmajlii": [
-    { "name": "Pork small", "description": "dough 200g, pork meat 150g.", "price": 190},
-    { "name": "Pork large", "description": "dough 300g, pork meat 220g.", "price": 260},
-    { "name": "Chicken small", "description": "dough 200g, chicken fillet 150g.", "price": 190},
-    { "name": "Chicken large", "description": "dough 300g, chicken fillet 220g.", "price": 260},
-    { "name": "Smoked small", "description": "dough 200g, smoked meat 150g.", "price": 240},
-    { "name": "Smoked large", "description": "dough 300g, smoked meat 220g.", "price": 320},
+    { "name": "Pork small", "description": "dough 200g, pork meat 150g.", "price": 220},
+    { "name": "Pork large", "description": "dough 300g, pork meat 220g.", "price": 290},
+    { "name": "Chicken small", "description": "dough 200g, chicken fillet 150g.", "price": 220},
+    { "name": "Chicken large", "description": "dough 300g, chicken fillet 220g.", "price": 290},
+    { "name": "Smoked small", "description": "dough 200g, smoked meat 150g.", "price": 270},
+    { "name": "Smoked large", "description": "dough 300g, smoked meat 220g.", "price": 350},
     { "name": "Add-ons", "description": "yellow cheese, egg", "price": 40}
     ],
     "Pizzas": [
-    { "name": "Sky pizza", "description": "tomato sauce, yellow cheese, neck, bacon, pepper", "price": "350/600"},
-    { "name": "Capricciosa", "description": "tomato sauce, yellow cheese, ham, mushrooms", "price": "290/500"},
-    { "name": "Margherita", "description": "tomato sauce, yellow cheese", "price": "260/450"},
-    { "name": "Napolitana", "description": "tomato sauce, yellow cheese, mushrooms", "price": "270/470"},
-    { "name": "Diavola", "description": "tomato sauce, yellow cheese, kulen", "price": "320/550"},
-    { "name": "Quattro formaggi", "description": "tomato sauce, yellow cheese, parmesan, blue cheese", "price": "350/600"},
-    { "name": "Veggie pizza", "description": "tomato sauce, yellow cheese, tomato, pepper, mushrooms, olives", "price": "290/500"}
+    { "name": "Sky pizza", "description": "tomato sauce, yellow cheese, neck, bacon, pepper", "price": "350/650"},
+    { "name": "Capricciosa", "description": "tomato sauce, yellow cheese, ham, mushrooms", "price": "300/550"},
+    { "name": "Margherita", "description": "tomato sauce, yellow cheese", "price": "280/500"},
+    { "name": "Napolitana", "description": "tomato sauce, yellow cheese, mushrooms", "price": "290/520"},
+    { "name": "Diavola", "description": "tomato sauce, yellow cheese, kulen", "price": "350/650"},
+    { "name": "Quattro formaggi", "description": "tomato sauce, yellow cheese, parmesan, blue cheese", "price": "350/650"},
+    { "name": "Veggie pizza", "description": "tomato sauce, yellow cheese, tomato, pepper, mushrooms, olives", "price": "300/550"}
     ],
     "Main dishes": [
-    { "name": "Chicken in white sauce", "description": "chicken fillet 150g, hopla, mushrooms, soy sauce, fries garnish", "price": 290},
-    { "name": "Chicken in curry sauce", "description": "chicken fillet 150g, hopla, curry sauce, fries garnish", "price": 280},
-    { "name": "Chicken fillet", "description": "300g.", "price": 230},
-    { "name": "Beef patty", "description": "200g.", "price": 230},
-    { "name": "Sharska patty", "description": "400g.", "price": 290},
-    { "name": "Patty in dough with cream", "description": "dough 200g, ground meat 200g, cream, yellow cheese", "price": 350},
-    { "name": "Chicken wrap", "description": "200g.", "price": 250},
-    { "name": "Pork wrap", "description": "200g.", "price": 250},
-    { "name": "Ribs", "description": "350g.", "price": 290},
-    { "name": "Oven ribs", "description": "1kg.", "price": 1100},
-    { "name": "Pork hanger", "description": "300g.", "price": 320},
-    { "name": "Smoked hanger", "description": "250g.", "price": 350},
-    { "name": "Thin sausage", "description": "250g.", "price": 270}
+    { "name": "Chicken in white sauce", "description": "chicken fillet 150g, hopla, mushrooms, soy sauce, fries garnish", "price": 310},
+    { "name": "Chicken in curry sauce", "description": "chicken fillet 150g, hopla, curry sauce, fries garnish", "price": 300},
+    { "name": "Chicken fillet", "description": "300g.", "price": 260},
+    { "name": "Beef patty", "description": "200g.", "price": 260},
+    { "name": "Sharska patty", "description": "400g.", "price": 320},
+    { "name": "Patty in dough with cream", "description": "dough 200g, ground meat 200g, cream, yellow cheese", "price": 370},
+    { "name": "Chicken wrap", "description": "200g.", "price": 300},
+    { "name": "Pork wrap", "description": "200g.", "price": 300},
+    { "name": "Ribs", "description": "350g.", "price": 320},
+    { "name": "Oven ribs", "description": "1kg.", "price": 1200},
+    { "name": "Pork hanger", "description": "300g.", "price": 350},
+    { "name": "Smoked hanger", "description": "250g.", "price": 380},
+    { "name": "Thin sausage", "description": "250g.", "price": 300}
     ],
     "Fish": [
-    { "name": "Carp", "description": "1kg.", "price": 900},
-    { "name": "Trout", "description": "1kg.", "price": 900}
+    { "name": "Carp", "description": "1kg.", "price": 1000},
+    { "name": "Trout", "description": "1kg.", "price": 1000}
     ],
     "Desserts": [
     { "name": "Nutella crepe", "description": "", "price": 180},
-    { "name": "Crepe", "description": "", "price": 120}
+    { "name": "Crepe", "description": "", "price": 120},
+    { "name": "Ice cream cake", "description": "Cheesecake, Cookies, Tiramisu, Chocolate", "price": 220}
     ],
     "Appetizers": [
     { "name": "Almonds", "description": "100g.", "price": 180},
@@ -100,29 +101,29 @@
   },
   "drinks": {
     "Water": [
-    { "name": "Rosa", "description": "330ml.", "price": 70},
-    { "name": "Rosa", "description": "750ml.", "price": 120},
-    { "name": "Knjaz Miloš", "description": "330ml.", "price": 70},
-    { "name": "Knjaz Miloš", "description": "750ml.", "price": 120}
+    { "name": "Rosa", "description": "330ml.", "price": 80},
+    { "name": "Rosa", "description": "750ml.", "price": 140},
+    { "name": "Rosa sparkle", "description": "330ml.", "price": 80},
+    { "name": "Rosa sparkle" , "description": "750ml.", "price": 140}
     ],
     "Coffee and hot drinks": [
-    { "name": "Espresso", "description": "", "price": 80},
-    { "name": "Macchiato", "description": "", "price": 90},
-    { "name": "Cappuccino", "description": "", "price": 100},
-    { "name": "Fredo espresso", "description": "", "price": 120},
-    { "name": "Fredo cappuccino", "description": "", "price": 150},
-    { "name": "Latte", "description": "", "price": 110},
-    { "name": "Nescafé", "description": "", "price": 120},
-    { "name": "Tea", "description": "", "price": 70},
+    { "name": "Espresso", "description": "", "price": 90},
+    { "name": "Macchiato", "description": "", "price": 100},
+    { "name": "Cappuccino", "description": "", "price": 110},
+    { "name": "Fredo espresso", "description": "", "price": 150},
+    { "name": "Fredo cappuccino", "description": "", "price": 170},
+    { "name": "Latte", "description": "", "price": 120},
+    { "name": "Nescafé", "description": "", "price": 130},
+    { "name": "Tea", "description": "", "price": 80},
     { "name": "Hot chocolate", "description": "", "price": 130}
     ],"Non-alcoholic drinks": [
-    { "name": "Coca Cola", "description": "250ml.", "price": 90},
-    { "name": "Fanta", "description": "250ml.", "price": 90},
-    { "name": "Schweppes", "description": "250ml.", "price": 90},
-    { "name": "Sprite", "description": "250ml.", "price": 90},
-    { "name": "Tonic", "description": "250ml.", "price": 90},
-    { "name": "Non-carbonated juice", "description": "200ml.", "price": 100},
-    { "name": "Red Bull", "description": "330ml.", "price": 200}
+    { "name": "Coca Cola", "description": "250ml.", "price": 100},
+    { "name": "Fanta", "description": "250ml.", "price": 100},
+    { "name": "Schweppes", "description": "250ml.", "price": 100},
+    { "name": "Sprite", "description": "250ml.", "price": 100},
+    { "name": "Tonic", "description": "250ml.", "price": 100},
+    { "name": "Non-carbonated juice", "description": "200ml.", "price": 120},
+    { "name": "Red Bull", "description": "330ml.", "price": 250}
     ],
     "Beer": [
     { "name": "Skopsko", "description": "500ml.", "price": 120},
@@ -131,45 +132,45 @@
     { "name": "Bira Moreti", "description": "400ml.", "price": 120}
     ],
     "Alcoholic drinks": [
-    { "name": "Tikveš yellow rakija", "description": "40ml.", "price": 90},
-    { "name": "Ouzo", "description": "40ml.", "price": 80},
-    { "name": "Smirnoff vodka", "description": "40ml.", "price": 120},
-    { "name": "Bombay gin", "description": "40ml.", "price": 200},
-    { "name": "Gin tonic", "description": "200ml.", "price": 200},
-    { "name": "Tequila", "description": "40ml.", "price": 100},
+    { "name": "Tikveš yellow rakija", "description": "40ml.", "price": 110},
+    { "name": "Ouzo", "description": "40ml.", "price": 100},
+    { "name": "Smirnoff vodka", "description": "40ml.", "price": 150},
+    { "name": "Tankeraj gin", "description": "40ml.", "price": 250},
+    { "name": "Gin tonic", "description": "200ml.", "price": 220},
+    { "name": "Tequila", "description": "40ml.", "price": 120},
     { "name": "Rum", "description": "40ml.", "price": 120},
-    { "name": "Cognac", "description": "40ml.", "price": 120},
+    { "name": "Cognac", "description": "40ml.", "price": 130},
     { "name": "Hennessy VS", "description": "40ml.", "price": 350},
-    { "name": "Johnnie Walker", "description": "40ml.", "price": 220},
-    { "name": "Johnnie Black", "description": "40ml.", "price": 300},
-    { "name": "JB", "description": "40ml.", "price": 220},
-    { "name": "Jack Daniel's", "description": "40ml.", "price": 250},
-    { "name": "Jameson", "description": "40ml.", "price": 220},
+    { "name": "Johnnie Walker", "description": "40ml.", "price": 250},
+    { "name": "Johnnie Black", "description": "40ml.", "price": 350},
+    { "name": "JB", "description": "40ml.", "price": 250},
+    { "name": "Jack Daniel's", "description": "40ml.", "price": 300},
+    { "name": "Jameson", "description": "40ml.", "price": 250},
     { "name": "Macallan 12", "description": "40ml.", "price": 400},
     { "name": "Glenfiddich 12", "description": "40ml.", "price": 300},
     { "name": "Glenlivet", "description": "40ml.", "price": 300},
     { "name": "Glenmorangie", "description": "40ml.", "price": 350}
     ],"Liqueurs": [
-    { "name": "Jägermeister", "description": "40ml.", "price": 170},
-    { "name": "Pelinkovac", "description": "40ml.", "price": 120},
+    { "name": "Jägermeister", "description": "40ml.", "price": 200},
+    { "name": "Pelinkovac", "description": "40ml.", "price": 130},
     { "name": "Martini", "description": "60ml.", "price": 200},
     { "name": "Baileys", "description": "40ml.", "price": 200}
     ],
     "Wine": [
-    { "name": "Alexandria", "description": "200ml.", "price": 200},
-    { "name": "Alexandria", "description": "750ml.", "price": 800},
-    { "name": "Traminac", "description": "200ml.", "price": 200},
-    { "name": "Traminac", "description": "750ml.", "price": 800},
-    { "name": "Temjanika", "description": "200ml.", "price": 200},
-    { "name": "Temjanika", "description": "750ml.", "price": 800},
-    { "name": "Alexandria cuvée", "description": "200ml.", "price": 250},
-    { "name": "Alexandria cuvée", "description": "750ml.", "price": 1000},
-    { "name": "T'ga za jug", "description": "200ml.", "price": 200},
-    { "name": "T'ga za jug", "description": "750ml.", "price": 800},
-    { "name": "Luda Mara Temjanika", "description": "750ml.", "price": 1000},
-    { "name": "Luda Mara Vranec", "description": "750ml.", "price": 1000},
-    { "name": "Luda Mara white cuvée", "description": "750ml.", "price": 1000},
-    { "name": "Luda Mara red cuvée", "description": "750ml.", "price": 1000}
+    { "name": "Alexandria", "description": "200ml.", "price": 220},
+    { "name": "Alexandria", "description": "750ml.", "price": 900},
+    { "name": "Traminac", "description": "200ml.", "price": 220},
+    { "name": "Traminac", "description": "750ml.", "price": 900},
+    { "name": "Temjanika", "description": "200ml.", "price": 220},
+    { "name": "Temjanika", "description": "750ml.", "price": 900},
+    { "name": "Alexandria cuvée", "description": "200ml.", "price": 270},
+    { "name": "Alexandria cuvée", "description": "750ml.", "price": 1200},
+    { "name": "T'ga za jug", "description": "200ml.", "price": 220},
+    { "name": "T'ga za jug", "description": "750ml.", "price": 900},
+    { "name": "Luda Mara Temjanika", "description": "750ml.", "price": 1200},
+    { "name": "Luda Mara Vranec", "description": "750ml.", "price": 1200},
+    { "name": "Luda Mara white cuvée", "description": "750ml.", "price": 1200},
+    { "name": "Luda Mara red cuvée", "description": "750ml.", "price": 1200}
     ]
   }
 }
