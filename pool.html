@@ -11,15 +11,9 @@
     <style>
         body {
             font-family: 'Outfit', sans-serif;
-            /* Magija: Gradijent i slika spojeni u jedno! Nema skakanja na skrol. */
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.95) 100%), url('img/pool-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-color: #000; /* Fallback boja */
         }
 
+        /* Skrivanje scrollbara za mobilne aplikacije */
         .hide-scroll::-webkit-scrollbar {
             display: none;
         }
@@ -29,14 +23,15 @@
         }
     </style>
 </head>
-<body class="antialiased text-gray-200">
+<body class="bg-[url('img/pool-bg.jpg')] bg-cover bg-center bg-fixed bg-no-repeat antialiased">
     
-    <div class="w-full flex flex-col items-center pb-12 min-h-screen">
+    <div class="min-h-[100dvh] pb-12 flex flex-col items-center bg-gradient-to-b from-black/90 via-black/60 to-black/90">
         
         <div class="w-full md:max-w-2xl mx-auto px-5 flex flex-col items-center">
             
             <header class="pt-12 pb-10 text-center w-full flex flex-col items-center">
                 <img src="img/Logo.svg" alt="Sky Logo" class="h-16 md:h-20 w-auto mb-3 object-contain drop-shadow-md">
+                
                 <p class="text-[#00A8E8] text-xs tracking-[0.35em] uppercase font-medium">Pool Bar Menu</p>
             </header>
 
@@ -44,7 +39,7 @@
                 <button id="btn-food" class="flex-1 py-2.5 rounded-full bg-white text-black font-semibold text-sm transition-all duration-300 shadow-sm">
                     Храна
                 </button>
-                <button id="btn-drinks" class="flex-1 py-2.5 rounded-full text-white font-medium text-sm transition-all duration-300 hover:bg-white/5">
+                <button id="btn-drinks" class="flex-1 py-2.5 rounded-full text-white font-medium text-sm transition-all duration-300">
                     Пијалоци
                 </button>
             </div>
