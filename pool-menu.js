@@ -31,9 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function switchType(type) {
         currentType = type;
 
-        // Logika za onaj "pilula" switch na vrhu (iOS stil)
         const activeClass = "flex-1 py-2.5 rounded-full bg-white text-black font-semibold text-sm transition-all duration-300 shadow-sm";
-        const inactiveClass = "flex-1 py-2.5 rounded-full text-white font-medium text-sm transition-all duration-300";
+        const inactiveClass = "flex-1 py-2.5 rounded-full text-white font-medium text-sm transition-all duration-300 hover:bg-white/5";
 
         if(type === 'food') {
             btnFood.className = activeClass;
@@ -47,6 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderCategories() {
+        // Dodata zastita ako podaci slucajno nisu tu
+        if (!menuData[currentType]) return;
+
         const categories = Object.keys(menuData[currentType]);
         currentCategory = categories[0];
 
@@ -74,10 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const buttons = categoryContainer.querySelectorAll('button');
         buttons.forEach(btn => {
             if (btn.textContent === currentCategory) {
-                // Aktivna kategorija - Samo tekst i donja linija, bez kocke
                 btn.className = 'whitespace-nowrap pb-2 text-base font-semibold transition-all duration-300 snap-center text-[#00A8E8] border-b-2 border-[#00A8E8]';
             } else {
-                // Neaktivna kategorija - Samo sivi tekst
                 btn.className = 'whitespace-nowrap pb-2 text-base font-medium transition-all duration-300 snap-center text-gray-400 hover:text-white border-b-2 border-transparent';
             }
         });
@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const items = menuData[currentType][currentCategory];
         productContainer.innerHTML = '';
 
+        // Zastita ako kategorija nema proizvode
         if (!items || items.length === 0) {
             productContainer.innerHTML = '<p class="text-center text-gray-400 mt-10">Нема производи во оваа категорија.</p>';
             return;
@@ -95,8 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
         items.forEach(item => {
             const descHTML = item.description ? `<p class="text-sm text-gray-400 mt-1 font-light leading-snug pr-4">${item.description}</p>` : '';
 
-            // Moderni List-View dizajn. Nema pozadine, nema zaobljenih kockica. 
-            // Samo čist raspored i border-b-white/10 (tanka linija između stavki)
             const row = `
                 <div class="py-4 border-b border-white/10 last:border-0 flex justify-between items-center gap-4">
                     <div class="flex-1">

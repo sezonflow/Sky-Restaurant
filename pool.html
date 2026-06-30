@@ -11,6 +11,13 @@
     <style>
         body {
             font-family: 'Outfit', sans-serif;
+            /* Magija: Gradijent i slika spojeni u jedno! Nema skakanja na skrol. */
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.95) 100%), url('img/pool-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #000; /* Fallback boja */
         }
 
         .hide-scroll::-webkit-scrollbar {
@@ -22,17 +29,9 @@
         }
     </style>
 </head>
-<!-- Očišćen body tag -->
-<body class="antialiased relative">
+<body class="antialiased text-gray-200">
     
-    <!-- 1. Fiksirana slika u pozadini koja ne mrda i ne skače -->
-    <div class="fixed inset-0 z-[-2] bg-[url('img/pool-bg.jpg')] bg-cover bg-center bg-no-repeat"></div>
-    
-    <!-- 2. Fiksirani gradijent preko slike -->
-    <div class="fixed inset-0 z-[-1] bg-gradient-to-b from-black/90 via-black/60 to-black/90"></div>
-    
-    <!-- 3. Glavni kontejner za sadržaj (samo skroluje) -->
-    <div class="w-full flex flex-col items-center pb-12">
+    <div class="w-full flex flex-col items-center pb-12 min-h-screen">
         
         <div class="w-full md:max-w-2xl mx-auto px-5 flex flex-col items-center">
             
@@ -41,27 +40,22 @@
                 <p class="text-[#00A8E8] text-xs tracking-[0.35em] uppercase font-medium">Pool Bar Menu</p>
             </header>
 
-            <!-- Tasteri za odabir menija -->
             <div class="flex p-1 mb-10 w-full max-w-sm bg-white/10 backdrop-blur-md rounded-full border border-white/10">
                 <button id="btn-food" class="flex-1 py-2.5 rounded-full bg-white text-black font-semibold text-sm transition-all duration-300 shadow-sm">
                     Храна
                 </button>
-                <button id="btn-drinks" class="flex-1 py-2.5 rounded-full text-white font-medium text-sm transition-all duration-300">
+                <button id="btn-drinks" class="flex-1 py-2.5 rounded-full text-white font-medium text-sm transition-all duration-300 hover:bg-white/5">
                     Пијалоци
                 </button>
             </div>
 
-            <!-- Kategorije -->
             <div class="w-full mb-8 relative">
                 <div id="category-container" class="flex overflow-x-auto gap-6 pb-2 hide-scroll snap-x snap-mandatory scroll-smooth">
-                    <!-- JS ubacuje text-only dugmad ovde -->
-                </div>
+                    </div>
             </div>
 
-            <!-- Proizvodi -->
             <main class="w-full flex flex-col" id="product-container">
-                <!-- JS ubacuje minimalističke redove ovde -->
-            </main>
+                </main>
 
         </div>
     </div>
