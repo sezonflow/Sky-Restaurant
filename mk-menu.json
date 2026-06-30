@@ -129,8 +129,7 @@
     "Пиво": [
       { "name": "Скопско", "description": "500мл.", "price": 120},
       { "name": "Скопско смут", "description": "500мл.", "price": 120},
-      { "name": "Хајнекен", "description": "500мл.", "price": 150},
-      { "name": "Бира морети", "description": "400мл.", "price": 120}
+      { "name": "Хајнекен", "description": "500мл.", "price": 150}
     ],
     "Алкохолни пијалоци": [
       { "name": "Ракија жолта Тиквеш", "description": "40мл.", "price": 110},

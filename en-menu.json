@@ -128,8 +128,7 @@
     "Beer": [
     { "name": "Skopsko", "description": "500ml.", "price": 120},
     { "name": "Skopsko smooth", "description": "500ml.", "price": 120},
-    { "name": "Heineken", "description": "500ml.", "price": 150},
-    { "name": "Bira Moreti", "description": "400ml.", "price": 120}
+    { "name": "Heineken", "description": "500ml.", "price": 150}
     ],
     "Alcoholic drinks": [
     { "name": "Tikveš yellow rakija", "description": "40ml.", "price": 110},
