@@ -23,9 +23,13 @@
         }
     </style>
 </head>
-<body class="bg-[url('img/pool-bg.jpg')] bg-cover bg-center bg-fixed bg-no-repeat antialiased">
+<body class="antialiased">
     
-    <div class="min-h-[100dvh] pb-12 flex flex-col items-center bg-gradient-to-b from-black/90 via-black/60 to-black/90">
+    <div class="fixed inset-0 -z-10 bg-[url('img/pool-bg.jpg')] bg-cover bg-center bg-no-repeat">
+        <div class="absolute inset-0 bg-black/75"></div>
+    </div>
+
+    <div class="min-h-[100dvh] pb-12 flex flex-col items-center">
         
         <div class="w-full md:max-w-2xl mx-auto px-5 flex flex-col items-center">
             
@@ -46,11 +50,11 @@
 
             <div class="w-full mb-8 relative">
                 <div id="category-container" class="flex overflow-x-auto gap-6 pb-2 hide-scroll snap-x snap-mandatory scroll-smooth">
-                    </div>
+                </div>
             </div>
 
             <main class="w-full flex flex-col" id="product-container">
-                </main>
+            </main>
 
         </div>
     </div>
