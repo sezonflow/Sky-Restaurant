@@ -9,11 +9,14 @@
     <link href="style.css" rel="stylesheet">
 
     <style>
+        html {
+            background-color: #000; /* fallback canvas color only */
+        }
+
         body {
             font-family: 'Outfit', sans-serif;
         }
 
-        /* Skrivanje scrollbara za mobilne aplikacije */
         .hide-scroll::-webkit-scrollbar {
             display: none;
         }
@@ -21,21 +24,30 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+
+        /* Truly fixed background: locked to smallest possible viewport size
+        (svh), so it never recalculates/jumps when the mobile URL bar
+        shows or hides, and is completely decoupled from page content. */
+        .bg-fixed-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100svh;
+        }
     </style>
 </head>
-<body class="antialiased">
-    
-    <div class="fixed inset-0 -z-10 bg-[url('img/pool-bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div class="absolute inset-0 bg-black/75"></div>
-    </div>
+<body class="antialiased overflow-y-scroll">
 
-    <div class="min-h-[100dvh] pb-12 flex flex-col items-center">
+    <div class="bg-fixed-layer -z-20 bg-[url('img/pool-bg.jpg')] bg-cover bg-center bg-no-repeat"></div>
+    <div class="bg-fixed-layer -z-10 bg-black/75"></div>
+
+    <div class="relative z-10 w-full min-h-dvh flex flex-col items-center pb-12">
         
         <div class="w-full md:max-w-2xl mx-auto px-5 flex flex-col items-center">
             
             <header class="pt-12 pb-10 text-center w-full flex flex-col items-center">
                 <img src="img/Logo.svg" alt="Sky Logo" class="h-16 md:h-20 w-auto mb-3 object-contain drop-shadow-md">
-                
                 <p class="text-[#00A8E8] text-xs tracking-[0.35em] uppercase font-medium">Pool Bar Menu</p>
             </header>
 
